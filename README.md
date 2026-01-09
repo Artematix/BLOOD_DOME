@@ -55,9 +55,12 @@ BLOOD_DOME/
 
 ### For Humans
 
-1. **Got an idea?** Add it to `drafts/_ideas.md`
-2. **Ready to build it?** Create a file in `drafts/{category}/` using the template from `.claude/templates/`
-3. **Finalized?** Move to `content/{category}/` and update the index
+1. **Got an idea?** Tell the AI agent, or add it to `drafts/_ideas.md`
+2. **Want to create something?** Tell the AI: *"Create a character called X with Y abilities"*
+3. **Need changes?** Tell the AI: *"Update the barbarian's HP to 50"*
+4. **Want to brainstorm?** Ask the AI: *"Generate some ideas for new consumable items"*
+
+The AI knows the system and will handle templates, indexes, and logging.
 
 ### For AI Agents
 

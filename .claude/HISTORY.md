@@ -28,6 +28,16 @@ Every time you create, modify, delete, or move content, add an entry at the TOP 
 
 ---
 
+## [2025-01-09 13:00] AI
+
+### Modified
+- README.md: Changed "For Humans" section to explain how to use AI agents
+- CLAUDE.md: Added "Add ideas" to agent capabilities and quick reference
+- drafts/_ideas.md: Added categories list and AI author option
+- Files: README.md, .claude/CLAUDE.md, drafts/_ideas.md
+
+---
+
 ## [2025-01-09 12:30] AI
 
 ### Modified

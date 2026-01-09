@@ -5,15 +5,17 @@ Unstructured brainstorming space. Throw ideas here before they become drafts.
 **Format:**
 ```
 ## [Category] Idea Name
-Author: YourName
+Author: YourName (or "AI" if AI-generated)
 Date: YYYY-MM-DD
 
 Description of the idea...
 ```
 
+**Categories:** Character, Item, Ability, Enemy, Quest, Event, Rule, System, Other
+
 ---
 
-<!-- Add new ideas below this line, newest at top -->
+<!-- ADD NEW IDEAS BELOW THIS LINE (newest at top) -->
 
 ## [Example] Sample Idea
 Author: System

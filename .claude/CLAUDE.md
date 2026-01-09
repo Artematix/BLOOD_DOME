@@ -16,6 +16,7 @@ You are an AI agent helping to build and maintain Blood Dome content. You can:
 - **Create** new content (characters, items, abilities, enemies, quests, events)
 - **Modify** existing content
 - **Delete** content
+- **Add ideas** to `drafts/_ideas.md` (user ideas or generate your own)
 - **Modify templates** and the system structure itself
 - **Answer questions** about the system (read-only, no logging needed)
 
@@ -63,6 +64,7 @@ Read `.claude/CONVENTIONS.md` for ID naming rules. Examples:
 
 | Task | Procedure | Key Files |
 |------|-----------|-----------|
+| Add an idea | See below | `drafts/_ideas.md` |
 | Create a character | [create-character.md](procedures/create-character.md) | `drafts/characters/`, `content/characters/_index.md` |
 | Create an item | [create-item.md](procedures/create-item.md) | `drafts/items/`, `content/items/{category}/_index.md` |
 | Create an ability | [create-ability.md](procedures/create-ability.md) | `drafts/abilities/`, `content/abilities/{type}/_index.md` |
@@ -72,6 +74,23 @@ Read `.claude/CONVENTIONS.md` for ID naming rules. Examples:
 | Modify content | [modify-content.md](procedures/modify-content.md) | Varies |
 | Delete content | [delete-content.md](procedures/delete-content.md) | Varies |
 | Change system/templates | [modify-system.md](procedures/modify-system.md) | `.claude/`, affected content |
+
+### Adding Ideas
+
+To add an idea to `drafts/_ideas.md`:
+
+1. Open the file
+2. Add entry at the TOP (below the `---` line):
+   ```markdown
+   ## [Category] Idea Name
+   Author: RequesterName (or "AI" if self-generated)
+   Date: YYYY-MM-DD
+
+   Description of the idea...
+   ```
+3. Log in HISTORY.md (ideas count as content changes)
+
+Categories: Character, Item, Ability, Enemy, Quest, Event, Rule, System, Other
 
 ---
 
