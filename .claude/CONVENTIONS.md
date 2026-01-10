@@ -133,9 +133,29 @@ The YAML frontmatter contains structured data. The markdown body contains:
 1. **Starting Level:** All characters start at Level 5
 2. **Level Progression:** Characters can only reach Level 6 via their character-specific level-up quest
 3. **Starting Equipment:** Characters have NO starting gear unless explicitly described in their character concept
-4. **Starting Abilities:** Only custom Blood Dome abilities - NOT default D&D class abilities
-5. **Level-Up Quest:** Each character must have exactly one quest with ID `quest_{char}_levelup`
-6. **Rest Ability:** Upon reaching Level 6, characters must gain a rest ability (can be in addition to existing rest mechanics)
+4. **Level-Up Quest:** Each character must have exactly one quest with ID `quest_{char}_levelup`
+5. **Rest Ability:** Upon reaching Level 6, characters must gain a rest ability (can be in addition to existing rest mechanics)
+
+### Character Structure (D&D vs Blood Dome)
+Characters have TWO distinct sections in their template:
+
+**`dnd:` section** - Standard D&D 5e (2024) character info:
+- `race` and `racial_traits` - What race they are and racial abilities
+- `class` and `subclass` - Their D&D class and subclass (chosen by level 3)
+- `class_features` - All D&D class/subclass features they have at Level 5
+- `feats` - Any feats they've taken
+- `spellcasting` - Spell slots, known/prepared spells, cantrips (if caster)
+- `background` - Optional flavor
+
+**`blood_dome:` section** - Custom Blood Dome additions:
+- `starting_equipment` - Items they start with (usually empty)
+- `starting_abilities` - Custom Blood Dome abilities they begin with
+- `purchasable_abilities` - Tiered abilities they can buy (tier_1/tier_2/tier_3)
+- `exclusive_items` - Items only this character can purchase
+
+**Key distinction:**
+- D&D features are what the character IS (not purchasable, always available)
+- Blood Dome abilities are what they CAN BUY or have been granted (purchasable, unlockable)
 
 ### Ability Rules (Character-Exclusive Only)
 1. **Tier System:** Each character has 3 tiers of abilities (Low, Medium, High)
