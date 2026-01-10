@@ -8,9 +8,9 @@ All custom rules for Blood Dome.
 |------|-------------|--------|
 | [Combat (PvP)](combat-pvp.md) | Player vs player combat rules | Draft |
 | [Combat (PvE)](combat-pve.md) | Player vs enemy combat rules | Draft |
-| [Economy](economy.md) | Coins, shop, buying/selling | Draft |
+| [Economy](economy.md) | Coins, shop, buying/selling, Amith Boons | Final |
 | [Progression](progression.md) | Leveling, upgrades | Draft |
-| [Resting](resting.md) | Short/long rest modifications | Draft |
+| [Resting](resting.md) | Rest action, spell/feature recovery | Final |
 | [Death & Respawn](death-respawn.md) | What happens when you die | Draft |
 | [Victory](victory-conditions.md) | How to win | Draft |
 

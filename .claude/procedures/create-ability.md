@@ -9,6 +9,7 @@ When creating a new ability (universal or character-exclusive).
 - Read `.claude/CONVENTIONS.md` for ID naming rules
 - Read `.claude/templates/ability.md` for the template
 - Know if it's universal or character-exclusive
+- **For character-exclusive abilities:** Ask user for tier (1/2/3) and subtype before proceeding
 
 ## ID Formats
 
@@ -46,10 +47,23 @@ modified: YYYY-MM-DD
 
 exclusive_to: null                # or char_id like "char_barbarian"
 
+# For character-exclusive abilities only
+tier: null                        # 1 (low), 2 (medium), or 3 (high) - null for universal
+subtype: null                     # Playstyle/ability type (e.g., "defensive", "burst_damage")
+
 shop:
-  buy: 100                        # null if not purchasable
+  buy: null                       # Tier-based: Tier 1=5g, Tier 2=10g, Tier 3=20g
   sell: null                      # abilities usually can't be sold
 ```
+
+**IMPORTANT - Tier Pricing for Character-Exclusive Abilities:**
+- Tier 1 = 5 gold
+- Tier 2 = 10 gold
+- Tier 3 = 20 gold
+- Universal abilities do NOT use tiers
+
+**IMPORTANT - Tier 3 Limit:**
+- Only ONE Tier 3 ability per character allowed
 
 Fill in action type, resource costs, targeting, effects, etc.
 
@@ -104,9 +118,12 @@ If this is a character-exclusive ability:
 
 - [ ] ID follows convention (universal vs exclusive)
 - [ ] `exclusive_to` set correctly (null or char_id)
+- [ ] **For character-exclusive:** Asked user for tier and subtype
+- [ ] **For character-exclusive:** Tier and subtype filled correctly
+- [ ] **For character-exclusive:** Shop price matches tier (1=5g, 2=10g, 3=20g)
+- [ ] **For character-exclusive:** Verified only one Tier 3 exists for this character
 - [ ] All required YAML fields filled
 - [ ] Action economy specified (action, bonus action, reaction, passive)
-- [ ] Shop price set if purchasable
 - [ ] Index file(s) updated
 - [ ] Shop catalog updated (if purchasable)
 - [ ] Character file updated (if exclusive and starting/progression)

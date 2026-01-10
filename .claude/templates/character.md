@@ -45,39 +45,38 @@ weapons: []                      # simple, martial, specific weapons
 armor: []                        # light, medium, heavy, shields
 
 # Starting Equipment (item IDs)
+# NOTE: Characters have NO starting gear unless explicitly described in character concept
 starting_equipment: []
 
 # Starting Abilities (ability IDs)
+# NOTE: Do NOT include default D&D class abilities - only custom Blood Dome abilities
 starting_abilities: []
 
 # Exclusive Items (only this character can buy/use)
 exclusive_items: []
 
 # Character Quests (quest IDs)
+# Each character MUST have exactly one level-up quest (quest_{char}_levelup)
+# This quest rewards level 6 progression when completed
 quests: []
 
 # Progression (Level 6+)
-# What they gain when leveling up
+# Characters start at Level 5 and can progress to Level 6 via their character quest
+# Level 7+ is not currently implemented
 progression:
   6:
+    # Gained upon completing character-specific level-up quest
     hp_bonus: 0
     abilities: []
+    rest_ability: null           # REQUIRED: Ability gained on rest at level 6 (ability ID)
     # Optional: choice between abilities
     # choice:
     #   type: ability
     #   options: []
-  7:
-    hp_bonus: 0
-    abilities: []
-  8:
-    hp_bonus: 0
-    abilities: []
-  9:
-    hp_bonus: 0
-    abilities: []
-  10:
-    hp_bonus: 0
-    abilities: []
+  # Note: Levels 7-10 not yet implemented
+  # 7:
+  #   hp_bonus: 0
+  #   abilities: []
 
 # Assets (relative to assets/ folder)
 assets:

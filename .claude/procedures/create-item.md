@@ -45,9 +45,14 @@ category: weapon|armor|consumable|artifact|misc
 rarity: common|uncommon|rare|very_rare|legendary
 
 shop:
-  buy: 100    # Price to purchase (null if not for sale)
-  sell: 50    # Typically 50% of buy price
+  buy: 100    # REQUIRED: Price to purchase (gold)
+  sell: 50    # REQUIRED: Price when selling (gold, typically 50% of buy)
 ```
+
+**CRITICAL REQUIREMENTS:**
+- **ALL items MUST have buy and sell values defined**
+- **Description MUST be clear and specific**
+- **Do NOT fill out extra data** without checking with the user
 
 Fill in category-specific fields (weapon stats, armor AC, etc.)
 
@@ -104,8 +109,10 @@ If `shop.buy` is not null, add to `content/shop/catalog.md` in the appropriate s
 
 - [ ] ID follows convention for category
 - [ ] All required YAML fields filled
-- [ ] Shop prices set (buy and sell, or null)
+- [ ] **Shop prices REQUIRED:** buy and sell values defined
+- [ ] **Description REQUIRED:** Clear and specific item description written
 - [ ] Exclusive character noted if applicable
+- [ ] **No extra data filled** without user confirmation
 - [ ] Asset placeholder created
 - [ ] Index file(s) updated
 - [ ] Shop catalog updated (if purchasable)

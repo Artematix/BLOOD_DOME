@@ -21,12 +21,15 @@ modified: YYYY-MM-DD
 
 # Quest Type
 type: character|universal|hidden
-# character = specific to one character
+# character = specific to one character (includes level-up quests)
 # universal = anyone can complete
 # hidden = not shown until triggered
 
 # Exclusivity
 exclusive_to: null               # null = universal, or char ID
+
+# Level-Up Quest (character quests only)
+is_levelup_quest: false          # true if this quest grants level 6 progression
 
 # Display
 show_in_journal: true            # Whether players see this quest
@@ -52,7 +55,7 @@ rewards:
   coins: 0
   items: []                      # Item IDs
   abilities: []                  # Ability IDs
-  # xp: 0                        # If using XP
+  level_up: false                # true if this quest grants level 6 (for level-up quests only)
   # other: ""                    # Custom rewards
 
 # Failure Conditions (optional)
@@ -94,7 +97,10 @@ Design notes, balance considerations, story connections.
 ### Character Quests
 Personal objectives for specific characters. These define part of a character's identity and progression.
 
-Example: `quest_barbarian_champion` - Kill 3 players in melee combat
+**IMPORTANT:** Each character MUST have exactly one level-up quest with ID format `quest_{char}_levelup`
+This quest rewards the character with level 6 progression when completed.
+
+Example: `quest_barbarian_levelup` - Kill 3 players in melee combat to reach level 6
 
 ### Universal Quests
 Available to all players. Often competitive.

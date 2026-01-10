@@ -33,10 +33,10 @@ requirements:
   # proficiency: martial        # Required proficiency if any
 
 # Shop Information
+# REQUIRED: All items MUST have buy and sell values defined
 shop:
-  buy: 100                       # Price to purchase (null if not for sale)
-  sell: 50                       # Price when selling (null if can't sell)
-  # Sell is typically 50% of buy, adjust as needed
+  buy: 100                       # REQUIRED: Price to purchase (gold)
+  sell: 50                       # REQUIRED: Price when selling (gold, typically 50% of buy)
 
 # For WEAPONS
 weapon:
@@ -73,11 +73,11 @@ assets:
 
 # Item Name
 
-*Flavor text or description*
+*Flavor text or lore*
 
 ## Description
 
-Physical description of the item.
+REQUIRED: Physical and mechanical description of the item. Must be clear and specific.
 
 ## Effect
 

@@ -28,6 +28,44 @@ Every time you create, modify, delete, or move content, add an entry at the TOP 
 
 ---
 
+## [2026-01-09 15:00] User
+
+### Modified
+- Completed resting rules documentation (no short/long rests, rest action, spell slot recovery, long rest feature recovery)
+- Completed economy rules documentation (gold earning, marketplace, Amith shrines, Amith boons)
+- Added item pricing guidelines and enemy gold drop rules
+- Updated rules index to reflect completed rules
+- Files:
+  - docs/rules/resting.md (fully documented)
+  - docs/rules/economy.md (fully documented with Amith boons)
+  - docs/rules/_index.md (updated status)
+  - .claude/CONVENTIONS.md (added pricing guidelines, enemy rules, resting rules)
+
+---
+
+## [2026-01-09 14:45] User
+
+### Modified (System)
+- Updated system structure with new Blood Dome game rules
+- Added ability tier system (Low/Medium/High) with pricing (5g/10g/20g)
+- Added character level-up quest requirements
+- Added rest ability requirement for level 6
+- Added mandatory item fields (description, buy, sell)
+- Removed starting equipment as default (now opt-in only)
+- Specified no default D&D abilities in character builds
+- Files:
+  - .claude/templates/ability.md (tier system, pricing)
+  - .claude/templates/character.md (level-up quest, rest ability, no starting gear)
+  - .claude/templates/item.md (required description, buy, sell)
+  - .claude/templates/quest.md (level-up quest fields)
+  - .claude/CONVENTIONS.md (Blood Dome Specific Rules section)
+  - .claude/procedures/create-ability.md (tier/subtype workflow)
+  - .claude/procedures/create-character.md (level-up quest, rest ability)
+  - .claude/procedures/create-item.md (required fields)
+  - .claude/CLAUDE.md (Critical Blood Dome Rules section)
+
+---
+
 ## [2025-01-09 13:00] AI
 
 ### Modified

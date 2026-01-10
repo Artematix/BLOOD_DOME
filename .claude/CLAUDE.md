@@ -206,6 +206,12 @@ You CAN modify the system itself. When doing so:
 4. **Missing asset placeholders** - Create `.placeholder` files for missing images
 5. **Wrong folder** - Drafts go in `drafts/`, final in `content/`
 6. **Inventing formats** - Use the templates
+7. **Not asking for tier/subtype** - Always ask user for ability tier and subtype
+8. **Filling extra data** - Don't fill out extra fields without user confirmation
+9. **Missing item requirements** - All items need description, buy price, and sell price
+10. **Forgetting level-up quest** - Every character needs a `quest_{char}_levelup`
+11. **Wrong tier pricing** - Tier 1=5g, Tier 2=10g, Tier 3=20g
+12. **Including D&D defaults** - Don't include default D&D class abilities
 
 ---
 
@@ -231,8 +237,37 @@ If you're just answering questions or exploring (not making changes):
 For your first task:
 1. Read the relevant procedure in `.claude/procedures/`
 2. Read the template in `.claude/templates/`
-3. Check `CONVENTIONS.md` for ID rules
-4. Create the content
-5. Update the index
-6. Log in HISTORY.md
-7. Done!
+3. Check `CONVENTIONS.md` for ID rules and Blood Dome specific rules
+4. **For abilities:** Ask user for tier and subtype
+5. **For items:** Ensure description, buy, and sell are all filled
+6. **For characters:** Create level-up quest and rest ability
+7. Create the content
+8. Update the index
+9. Log in HISTORY.md
+10. Done!
+
+## Critical Blood Dome Rules
+
+### Character Rules
+- All characters start at **Level 5**
+- **NO starting equipment** unless explicitly described
+- **NO default D&D abilities** - only custom Blood Dome abilities
+- Each character **MUST** have a level-up quest (`quest_{char}_levelup`)
+- Level 6 progression **MUST** include a rest ability
+
+### Ability Rules (Character-Exclusive)
+- **3 tiers per character**: Low (1), Medium (2), High (3)
+- **Pricing**: Tier 1 = 5g, Tier 2 = 10g, Tier 3 = 20g
+- **Only ONE Tier 3 ability** per character
+- **Always ask user** for tier and subtype before creating
+- Universal abilities do NOT use tiers
+
+### Item Rules
+- **ALL items MUST have**:
+  - Item description (clear and specific)
+  - Buy price (in gold)
+  - Sell value (in gold, typically 50% of buy)
+
+### Quest Rules
+- Each character needs one level-up quest (`quest_{char}_levelup`)
+- Level-up quests grant Level 6 progression

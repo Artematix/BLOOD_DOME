@@ -14,12 +14,25 @@ Format: `[YYYY-MM-DD] Category: Brief description (Author)`
 - Convention documentation
 - **AI Agent instruction system** (.claude/CLAUDE.md)
 - Step-by-step procedures for all content operations (.claude/procedures/)
+- **Blood Dome Specific Rules** (2026-01-09)
+  - Ability tier system (Low/Medium/High) with fixed pricing
+  - Character level-up quest requirements
+  - Rest ability requirement for level 6 progression
+  - Mandatory item fields (description, buy price, sell price)
 
 ### Changed
 - HISTORY.md format improved with clearer instructions
+- **System Structure Updates** (2026-01-09)
+  - Ability template: Added tier and subtype fields, tier-based pricing
+  - Character template: Added level-up quest requirement, rest ability field, no starting equipment default
+  - Item template: Made description, buy, and sell fields mandatory
+  - Quest template: Added level-up quest tracking fields
+  - CONVENTIONS.md: Added "Blood Dome Specific Rules" section
+  - All procedures updated with new validation requirements
 
 ### Removed
-- (none yet)
+- Default starting equipment for characters (now opt-in only)
+- Default D&D class abilities from character builds (custom abilities only)
 
 ---
 
