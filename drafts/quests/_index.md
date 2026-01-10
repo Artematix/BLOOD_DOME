@@ -2,9 +2,9 @@
 
 Work-in-progress quests.
 
-| ID | Name | Type | Status | Author | Notes |
-|----|------|------|--------|--------|-------|
-| *No drafts yet* | | | | | |
+| ID | Name | Type | Exclusive To | Status | Author | Notes |
+|----|------|------|--------------|--------|--------|-------|
+| quest_sharkshooter_levelup | Blood in the Water | character | char_sharkshooter | draft | User | Level-up quest - wound and finish enemies |
 
 ---
 
