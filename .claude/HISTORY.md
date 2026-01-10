@@ -28,6 +28,24 @@ Every time you create, modify, delete, or move content, add an entry at the TOP 
 
 ---
 
+## [2026-01-09 16:00] AI
+
+### Modified (System)
+- Restructured character template to separate D&D 5e base info from Blood Dome custom content
+- Added `dnd:` section for standard D&D character info (race, racial_traits, class, subclass, class_features, feats, spellcasting, background)
+- Added `blood_dome:` section for custom content (starting_equipment, starting_abilities, purchasable_abilities with tiers, exclusive_items)
+- Added `purchasable_abilities` structure with explicit tier_1/tier_2/tier_3 organization
+- Updated progression structure with `new_class_features` and `new_blood_dome_abilities`
+- Added tools and languages to proficiencies
+- Updated markdown body template with D&D Features Summary and Blood Dome Abilities sections
+- Files:
+  - .claude/templates/character.md (major restructure)
+  - .claude/CONVENTIONS.md (added "Character Structure" documentation)
+  - .claude/procedures/create-character.md (added D&D/Blood Dome workflow, updated checklist)
+- Reason: Clear separation between vanilla D&D mechanics and custom Blood Dome content
+
+---
+
 ## [2026-01-09 15:00] User
 
 ### Modified
