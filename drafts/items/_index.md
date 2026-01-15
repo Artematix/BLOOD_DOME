@@ -4,7 +4,7 @@ Work-in-progress items.
 
 | ID | Name | Category | Status | Author | Notes |
 |----|------|----------|--------|--------|-------|
-| *No drafts yet* | | | | | |
+| item_wpn_moanas_fang | Moan-a's Fang | weapon | draft | zebko | Trident with shark demigod spirit, 5g, exclusive to Yyroizgt |
 
 ---
 

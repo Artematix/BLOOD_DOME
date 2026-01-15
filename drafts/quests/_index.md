@@ -4,7 +4,7 @@ Work-in-progress quests.
 
 | ID | Name | Type | Status | Author | Notes |
 |----|------|------|--------|--------|-------|
-| *No drafts yet* | | | | | |
+| quest_yyroizgt_levelup | Blood Tide | levelup | draft | zebko | Kill 2 wet PCs, grants Level 6 + rest ability |
 
 ---
 

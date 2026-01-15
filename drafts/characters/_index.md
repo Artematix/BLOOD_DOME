@@ -4,7 +4,7 @@ Work-in-progress characters.
 
 | ID | Name | Status | Author | Notes |
 |----|------|--------|--------|-------|
-| *No drafts yet* | | | | |
+| char_yyroizgt | Yyroizgt | draft | zebko | Paladin devoted to Moan-a, goddess of the seas |
 
 ---
 
