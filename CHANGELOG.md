@@ -29,6 +29,14 @@ Format: `[YYYY-MM-DD] Category: Brief description (Author)`
   - Quest template: Added level-up quest tracking fields
   - CONVENTIONS.md: Added "Blood Dome Specific Rules" section
   - All procedures updated with new validation requirements
+- **Character Template Restructure** (2026-01-09)
+  - Added `dnd:` section for standard D&D 5e (2024) character info
+    - race, racial_traits, class, subclass, class_features, feats, spellcasting, background
+  - Added `blood_dome:` section for custom Blood Dome content
+    - starting_equipment, starting_abilities, purchasable_abilities (tier_1/tier_2/tier_3), exclusive_items
+  - Clear separation: D&D features = what character IS, Blood Dome abilities = what they CAN BUY
+  - Updated create-character procedure with D&D/Blood Dome workflow
+  - Added Character Structure documentation to CONVENTIONS.md
 
 ### Removed
 - Default starting equipment for characters (now opt-in only)

@@ -6,9 +6,9 @@ When creating a new playable character for Blood Dome.
 
 ## Prerequisites
 
-- Read `.claude/CONVENTIONS.md` for ID naming rules
+- Read `.claude/CONVENTIONS.md` for ID naming rules and character structure
 - Read `.claude/templates/character.md` for the template
-- Know the character concept (class, role, theme)
+- Know the character concept (race, class, subclass, role, theme)
 
 ## Steps
 
@@ -40,12 +40,57 @@ modified: YYYY-MM-DD
 **IMPORTANT RULES:**
 - **Starting Level:** All characters start at Level 5
 - **Starting Equipment:** NO starting gear unless explicitly described in character concept
-- **Starting Abilities:** Only custom Blood Dome abilities - NOT default D&D class abilities
 - **Level-Up Quest:** Must create a level-up quest with ID `quest_{char}_levelup`
 - **Level 6 Progression:** Must define rest_ability in progression.6
 - **Do NOT fill out extra data** without checking with the user
 
-Fill in all stats, abilities, equipment references, etc.
+### 3a. Fill Out the D&D Section (`dnd:`)
+
+This section contains standard D&D 5e (2024) character information:
+
+```yaml
+dnd:
+  race: "Half-Orc"
+  racial_traits:
+    - name: "Darkvision"
+      description: "See in dim light within 60 feet as bright light."
+    - name: "Relentless Endurance"
+      description: "Drop to 1 HP instead of 0 once per long rest."
+  class: "Barbarian"
+  subclass: "Path of the Berserker"
+  class_features:
+    - name: "Rage"
+      description: "..."
+      uses: "3/long rest"
+    - name: "Reckless Attack"
+      description: "..."
+    - name: "Extra Attack"
+      description: "..."
+  feats: []
+  spellcasting: null  # Delete or leave null for non-casters
+  background: "Gladiator"
+```
+
+**Include ALL class features the character has at Level 5.** Reference the D&D 5e (2024) rules for the class.
+
+### 3b. Fill Out the Blood Dome Section (`blood_dome:`)
+
+This section contains custom Blood Dome content:
+
+```yaml
+blood_dome:
+  starting_equipment: []        # Usually empty
+  starting_abilities: []        # Custom abilities they start with (if any)
+  purchasable_abilities:
+    tier_1: []                  # 5g abilities
+    tier_2: []                  # 10g abilities
+    tier_3: []                  # 20g ability (ONE max)
+  exclusive_items: []           # Items only they can buy
+```
+
+**Key distinction:**
+- `dnd.class_features` = What they get from D&D (Rage, Sneak Attack, etc.)
+- `blood_dome.purchasable_abilities` = Custom abilities they can BUY in Blood Dome
 
 ### 4. Create Asset Folder
 
@@ -116,14 +161,27 @@ Add at the TOP of `.claude/HISTORY.md`:
 - [ ] ID follows convention: `char_{name}`
 - [ ] All required YAML fields filled
 - [ ] Stats are balanced for Level 5
-- [ ] **NO starting equipment** (unless explicitly part of character concept)
-- [ ] **NO default D&D abilities** in starting_abilities
-- [ ] Level-up quest created (`quest_{char}_levelup`)
-- [ ] Rest ability defined in `progression.6.rest_ability`
-- [ ] Starting abilities IDs exist (or are being created)
+
+**D&D Section (`dnd:`):**
+- [ ] Race and racial traits filled out
+- [ ] Class and subclass specified
+- [ ] ALL class features at Level 5 documented in `dnd.class_features`
+- [ ] Feats listed (if any)
+- [ ] Spellcasting filled out (if caster) or removed (if not)
+
+**Blood Dome Section (`blood_dome:`):**
+- [ ] `starting_equipment` is empty (unless explicitly part of character concept)
+- [ ] `starting_abilities` contains only custom Blood Dome abilities (NOT D&D features)
+- [ ] `purchasable_abilities` organized by tier (tier_1, tier_2, tier_3)
+- [ ] **Only ONE tier 3 ability** for this character
 - [ ] **For all abilities:** Asked user for tier and subtype
 - [ ] **For all abilities:** Pricing matches tier (1=5g, 2=10g, 3=20g)
-- [ ] **Verified:** Only one Tier 3 ability for this character
+
+**Quests & Progression:**
+- [ ] Level-up quest created (`quest_{char}_levelup`)
+- [ ] Rest ability defined in `progression.6.rest_ability`
+
+**Final Steps:**
 - [ ] Asset folder created with placeholders
 - [ ] Index file updated
 - [ ] HISTORY.md logged

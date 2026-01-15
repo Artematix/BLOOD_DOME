@@ -2,9 +2,9 @@
 
 Work-in-progress characters.
 
-| ID | Name | Status | Author | Notes |
-|----|------|--------|--------|-------|
-| char_yyroizgt | Yyroizgt | draft | zebko | Paladin devoted to Moan-a, goddess of the seas |
+| ID | Name | Role | Status | Author | Notes |
+|----|------|------|--------|--------|-------|
+| char_sharkshooter | The SharkShooter | damage | draft | User | Half-shark demigod ranger, son of Moan-a the Shark Goddess |
 
 ---
 
