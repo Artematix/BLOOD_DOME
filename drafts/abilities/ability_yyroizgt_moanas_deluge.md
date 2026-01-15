@@ -85,7 +85,7 @@ Yyroizgt raises his arms and screams to the heavens. The air ripples. Then the o
 **This is Yyroizgt's Ultimate - The Blood Tide:**
 
 **Why This Wins Fights:**
-1. **Mass Devastation**: 4d8 damage to EVERYONE in 30 feet - that's potentially 18 damage to 6+ enemies
+1. **Mass Devastation**: 6d8 damage to EVERYONE in 30 feet - that's potentially 18 damage to 6+ enemies
 2. **Total Wet Coverage**: Every single target gets soaked - all marked for death, all count for the quest
 3. **Battlefield Domination**: Creates a 30-foot pool of blood-water where Yyroizgt has advantage
 4. **Crowd Control**: Knocks multiple enemies prone and scatters them
@@ -118,7 +118,7 @@ Yyroizgt raises his arms and screams to the heavens. The air ripples. Then the o
 
 **Why It's Tier 3:**
 - Only 1 use per long rest (must be used wisely)
-- Significant AoE damage (4d8 to multiple targets)
+- Significant AoE damage (6d8 to multiple targets)
 - Guarantees wet status on ALL targets (even on successful save)
 - Creates beneficial terrain for 1 minute
 - Knocks prone (disadvantage on ranged attacks, advantage for melee)
