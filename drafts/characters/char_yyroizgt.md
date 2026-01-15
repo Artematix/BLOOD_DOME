@@ -1,3 +1,119 @@
+```yaml
+---
+id: char_yyroizgt
+name: "Yyroizgt"
+status: draft
+author: "zebko"
+created: 2026-01-09
+modified: 2026-01-09
+
+# Core Identity
+class: "Paladin"
+role: "tank, support"
+
+# Base Stats (Level 5)
+hp: 47
+ac: 18
+speed: 30
+proficiency_bonus: 3
+
+# Ability Scores
+str: 16
+dex: 10
+con: 14
+int: 8
+wis: 12
+cha: 16
+
+# Saving Throws (list proficient saves)
+saving_throws: ["wisdom", "charisma"]
+
+# Skills (list proficient skills)
+skills: ["athletics", "religion", "persuasion"]
+
+# Proficiencies
+weapons: ["simple", "martial"]
+armor: ["light", "medium", "heavy", "shields"]
+
+# Starting Equipment (item IDs)
+starting_equipment: []
+
+# Starting Abilities (ability IDs)
+starting_abilities: []
+
+# Exclusive Items (only this character can buy/use)
+exclusive_items: ["ability_yyroizgt_wave_crash", "ability_yyroizgt_drowning_grasp", "ability_yyroizgt_moanas_deluge"]
+
+# Character Quests (quest IDs)
+quests: ["quest_yyroizgt_blood_tide"]
+
+# Progression (Level 6+)
+# What they gain when leveling up
+progression:
+  6:
+    hp_bonus: 9
+    abilities: []
+  7:
+    hp_bonus: 9
+    abilities: []
+  8:
+    hp_bonus: 9
+    abilities: []
+  9:
+    hp_bonus: 9
+    abilities: []
+  10:
+    hp_bonus: 9
+    abilities: []
+
+# Assets (relative to assets/ folder)
+assets:
+  portrait: characters/char_yyroizgt/portrait.png
+  token: characters/char_yyroizgt/token.png
+---
+
+# Yyroizgt
+
+*"The ocean's wrath flows through me. All shall pay tribute to Moan-a, goddess of the eternal tide!"*
+
+## Description
+
+Yyroizgt is a devout paladin whose love for the sea borders on obsession. Bronzed by endless days beneath the sun, his skin bears patterns of wave-like tattoos that seem to shimmer when wet. His eyes hold the depth of the ocean itself - calm on the surface, but concealing tremendous power beneath. He wears armor adorned with shells, coral, and salvaged treasures from the deep, each piece a tribute to his beloved goddess Moan-a.
+
+From a young age, Yyroizgt loved nothing more than sailing and swimming in the ocean. His earnest and deep love has led him to the most wonderful goddess in all the seas, Moan-a. To win her favour, Yyroizgt realized that he must ensure that all who dare encroach on her domain pay their proper respect, whether they want to or not.
+
+In the Blood Dome, any water - from shallow puddles to deep pools - represents his goddess' sacred domain. He patrols these waters zealously, demanding blood tribute from any who dare tread within.
+
+## Special Mechanics
+
+**Ocean's Domain**: Yyroizgt gains advantage on all attacks while standing in water of any depth. Additionally, he has advantage on attacks against creatures with the "wet" status.
+
+**Tidal Smite**: Yyroizgt's divine smites are infused with seawater. When he uses Divine Smite on a melee attack, the target gains the "wet" status for 1 minute. This "wet" status marks them as touched by Moan-a's domain.
+
+**Tidal Wrath**: Once per long rest, Yyroizgt can channel Moan-a's fury to deal an extra 2d8 radiant damage on his next melee attack. If this attack hits a creature with the "wet" status, the damage becomes 3d8 instead.
+
+## Notes
+
+This character is designed as a territorial tank who controls water-based areas of the map while having agency over his quest through the "wet" status mechanic.
+
+**Key Mechanic - "Wet" Status:**
+- Applied by: entering water, being hit by Yyroizgt's Divine Smites, or other water effects
+- Duration: 1 minute (can be house-ruled based on DM preference)
+- Effect: Marks targets for Yyroizgt's quest and makes them vulnerable to his enhanced attacks
+- Tracked with visible tokens or status markers
+
+**Design Philosophy:**
+- Yyroizgt can actively work toward his quest by applying "wet" via his smites
+- Not dependent solely on environmental positioning
+- Creates synergy between his combat abilities and quest objective
+- Water terrain still valuable but not mandatory
+
+**Balance Considerations:**
+- Advantage on attacks (both in water and vs wet targets) is strong but situational
+- Tidal Smite requires using spell slots (Divine Smite resource)
+- Quest completion requires 2 kills with "wet" status active, encouraging strategic timing
+- "Wet" status has counterplay through waiting it out or avoiding Yyroizgt's smites
+```
 ---
 id: char_yyroizgt
 name: "Yyroizgt"
